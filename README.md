@@ -27,10 +27,11 @@ produced by the scripts below.
 |---|---|
 | `model.py` | Stimulus corpus coded as event grammars, parse-state trace, three cost functions, commitment model |
 | `simulations.py` | Runs all seven simulations, writes `results.json` |
+| `robustness.py` | Coder-disagreement, functional-form and trough-depth analyses; writes `robustness.json` |
 | `figures.py` | Builds the four figures from `results.json` |
 | `export_corpus.py` | Writes `corpus.csv`, the full frame-by-frame stimulus coding |
 | `corpus.csv` | Stimulus coding and derived cost values, for inspection or re-coding |
-| `results.json` | Numerical output; every value in the paper comes from here |
+| `results.json`, `robustness.json` | Numerical output; every value in the paper comes from here |
 | `requirements.txt`, `LICENSE`, `CITATION.cff` | Environment, licence, citation metadata |
 
 ## Reproducing everything
@@ -38,6 +39,7 @@ produced by the scripts below.
 ```bash
 pip install -r requirements.txt
 python3 simulations.py      # ~10 minutes, writes results.json
+python3 robustness.py       # ~15 minutes, writes robustness.json
 python3 export_corpus.py    # writes corpus.csv
 python3 figures.py          # writes figures/*.pdf
 ```
@@ -53,6 +55,14 @@ python3 figures.py          # writes figures/*.pdf
 | 4 | Trial count binds harder than sample size, since conditioning on correct T1 discards roughly half the trials |
 | 5 | The generating cost function is recovered on ~97% of simulated datasets at n = 35 |
 | 6 | The free scaling parameter β changes required sample size but not the qualitative pattern |
+
+Robustness analyses in `robustness.py`:
+
+| Analysis | Result |
+|---|---|
+| R1 | Simulated coder disagreement (mean pairwise r = 0.76–0.84) lowers recovery from 0.97 to 0.84–0.93, but does not destroy it |
+| R2 | The multiplicative and additive forms of integration cost correlate at r = 0.71 and are distinguished on 93% of datasets |
+| R3 | A deeper baseline trough (0.39) increases rather than decreases the predicted effect |
 
 ## Changing or extending the stimulus corpus
 

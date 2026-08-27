@@ -40,7 +40,6 @@ pip install -r requirements.txt
 python3 simulations.py      # ~10 minutes, writes results.json
 python3 export_corpus.py    # writes corpus.csv
 python3 figures.py          # writes figures/*.pdf
-latexmk -pdf paper.tex
 ```
 
 ## What each simulation shows

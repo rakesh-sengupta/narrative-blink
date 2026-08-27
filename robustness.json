@@ -1,0 +1,140 @@
+{
+  "coding": {
+    "0.1": {
+      "mean_pairwise_r": {
+        "item": 0.876,
+        "surprisal": 1.0,
+        "integration": 0.934
+      },
+      "recovery_diagonal": {
+        "item": 0.96,
+        "surprisal": 0.96,
+        "integration": 0.953
+      },
+      "confusion": {
+        "item": {
+          "item": 0.96,
+          "surprisal": 0.027,
+          "integration": 0.013
+        },
+        "surprisal": {
+          "item": 0.0,
+          "surprisal": 0.96,
+          "integration": 0.04
+        },
+        "integration": {
+          "item": 0.007,
+          "surprisal": 0.04,
+          "integration": 0.953
+        }
+      }
+    },
+    "0.25": {
+      "mean_pairwise_r": {
+        "item": 0.757,
+        "surprisal": 1.0,
+        "integration": 0.835
+      },
+      "recovery_diagonal": {
+        "item": 0.84,
+        "surprisal": 0.973,
+        "integration": 0.927
+      },
+      "confusion": {
+        "item": {
+          "item": 0.84,
+          "surprisal": 0.087,
+          "integration": 0.073
+        },
+        "surprisal": {
+          "item": 0.007,
+          "surprisal": 0.973,
+          "integration": 0.02
+        },
+        "integration": {
+          "item": 0.007,
+          "surprisal": 0.067,
+          "integration": 0.927
+        }
+      }
+    },
+    "0.4": {
+      "mean_pairwise_r": {
+        "item": 0.658,
+        "surprisal": 1.0,
+        "integration": 0.72
+      },
+      "recovery_diagonal": {
+        "item": 0.907,
+        "surprisal": 0.94,
+        "integration": 0.92
+      },
+      "confusion": {
+        "item": {
+          "item": 0.907,
+          "surprisal": 0.067,
+          "integration": 0.027
+        },
+        "surprisal": {
+          "item": 0.013,
+          "surprisal": 0.94,
+          "integration": 0.047
+        },
+        "integration": {
+          "item": 0.013,
+          "surprisal": 0.067,
+          "integration": 0.92
+        }
+      }
+    }
+  },
+  "form": {
+    "correlation_between_forms": 0.713,
+    "recovered_as_multiplicative": 0.933
+  },
+  "deep_trough": {
+    "baseline_curve": {
+      "1": 0.843,
+      "2": 0.596,
+      "3": 0.393,
+      "4": 0.596,
+      "5": 0.843,
+      "6": 0.898,
+      "8": 0.9
+    },
+    "where": {
+      "item": {
+        "1": 0.0,
+        "2": 0.001,
+        "3": 0.028,
+        "4": 0.128,
+        "5": 0.063,
+        "6": 0.004,
+        "8": 0.0
+      },
+      "surprisal": {
+        "1": 0.0,
+        "2": 0.001,
+        "3": 0.029,
+        "4": 0.139,
+        "5": 0.071,
+        "6": 0.005,
+        "8": 0.0
+      },
+      "integration": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.023,
+        "4": 0.143,
+        "5": 0.086,
+        "6": 0.007,
+        "8": 0.0
+      }
+    },
+    "recovery_diagonal": {
+      "item": 1.0,
+      "surprisal": 0.98,
+      "integration": 0.987
+    }
+  }
+}

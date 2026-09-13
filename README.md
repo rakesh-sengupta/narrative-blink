@@ -3,9 +3,6 @@
 Simulation code for **"What visual narrative adds to the attentional blink: a
 parsing account and its consequences for design"**.
 
-Aahana Rath and Rakesh Sengupta
-Computational Cognition Lab, School of Interwoven Arts and Sciences,
-Krea University, Sri City, India
 
 ---
 
@@ -77,10 +74,7 @@ Adding stories with more closure points will raise the variance of the
 integration cost function, which is currently the weakest of the three. Inspect
 `corpus.csv` to see the effect of a re-coding without reading any Python.
 
-## Citation
 
-See `CITATION.cff`. Please cite the paper once it is published; until then, cite
-this repository and its archived release.
 
 ## Licence
 
